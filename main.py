@@ -1,7 +1,7 @@
 import hashlib
 
 salt = "SaltRandomizer"
-db_txt_file_pth = '/path/to/your/database/file.txt'
+db_txt_file_pth = '/path/to/your/database/db.txt'
 
 while True:    
     def menu():
