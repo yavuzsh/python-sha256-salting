@@ -45,7 +45,7 @@ while True:
         file.write(username + ":" + (sha256hasher(salt + username + salt[:5] + passwd + passwd[:1] + salt))[:59] + "\n")
 
     def readDB(username,passwd):
-        query = (username + ":" + sha256hasher((salt + username + salt[:5] + passwd + passwd[:1] + salt))[:59]+ "\n")
+        query = (username + ":" + (sha256hasher(salt + username + salt[:5] + passwd + passwd[:1] + salt))[:59]+ "\n")
          
         line_counter = 0
         incor = 0
